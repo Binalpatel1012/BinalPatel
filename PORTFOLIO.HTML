@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binal Patel - Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background: #F5F5F5;
+      color: #243B55;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      list-style: none;
+    }
+    /* Navigation */
+    nav {
+      position: fixed;
+      width: 100%;
+      background: #243B55;
+      padding: 1rem 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #FFFFFF;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #20B2AA;
+    }
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      background: #243B55;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 8rem 2rem;
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+    }
+    .hero a {
+      display: inline-block;
+      background: #20B2AA;
+      color: #FFFFFF;
+      padding: 0.75rem 1.5rem;
+      margin-top: 2rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .hero a:hover {
+      background: #FF6F61;
+    }
+    .skills, .projects, .experience, .education, .contact {
+      background: #FFFFFF;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+    .skills h2, .projects h2, .experience h2, .education h2, .contact h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .skills-grid, .projects-grid, .experience-list, .education-list, .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .skill-item, .project-item, .experience-item, .education-item {
+      flex: 1 1 300px;
+    }
+    .skill-item {
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+    .skill-item i {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+    .project-item img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .project-details h3 {
+      margin-top: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+    }
+    .project-details p {
+      margin-top: 0.5rem;
+    }
+    .experience-item, .education-item {
+      background: #F5F5F5;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+    .experience-item h3, .education-item h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-info p {
+      font-size: 1.1rem;
+    }
+    .contact-info i {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      color: #20B2AA;
+    }
+    form {
+      margin-top: 1.5rem;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #20B2AA;
+      color: #FFFFFF;
+      cursor: pointer;
+      border: none;
+    }
+    form button:hover {
+      background: #FF6F61;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #243B55;
+      color: #FFFFFF;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero" class="hero">
+  <h1>Binal Patel</h1>
+  <p>Developer with a passion for creating responsive and engaging web applications.</p>
+  <a href="#contact">Get in Touch</a>
+</section>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>I am a developer based in Sudbury, ON, with a robust background in designing and implementing responsive web applications. My expertise includes HTML, CSS, JavaScript, C#, .NET, and Android development. I am committed to translating design concepts into high-quality, functional code and enhancing web performance.</p>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item"><i class="devicon-html5-plain"></i> HTML</div>
+    <div class="skill-item"><i class="devicon-css3-plain"></i> CSS</div>
+    <div class="skill-item"><i class="devicon-javascript-plain"></i> JavaScript</div>
+    <div class="skill-item"><i class="devicon-python-plain"></i> Python</div>
+    <div class="skill-item"><i class="devicon-csharp-plain"></i> C#</div>
+    <div class="skill-item"><i class="devicon-dot-net-plain"></i> .NET</div>
+    <div class="skill-item"><i class="devicon-android-plain"></i> Android</div>
+    <div class="skill-item"><i class="devicon-figma-plain"></i> Figma</div>
+    <div class="skill-item"><i class="devicon-r-plain"></i> R Programming</div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-item">
+      <img src="path/to/meal-mate-screenshot.jpg" alt="MEALMATE Application">
+      <div class="project-details">
+        <h3>MEALMATE Application</h3>
+        <p>Developed using C# and .NET, MEALMATE enhances meal planning and nutrition tracking. Features include user authentication, meal logging, and personalized recipe recommendations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="experience">
+  <h2>Experience</h2>
+  <div class="experience-list">
+    <div class="experience-item">
+      <h3>UI / UX Designer Intern - Sofvie Inc</h3>
+      <p>May 2024 - June 2024</p>
+      <ul>
+        <li>Designed intuitive and user-friendly interfaces for safety management software using Figma.</li>
+        <li>Created wireframes, interactive prototypes, and high-fidelity mockups.</li>
+        <li>Conducted user research and usability testing to gather feedback and improve the user experience.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Jr. Front-end Developer - Appstone Pvt. Ltd</h3>
+      <p>March 2022 - June 2023</p>
+      <ul>
+        <li>Developed responsive and interactive user interfaces for web applications.</li>
+        <li>Implemented design mockups into functional and visually appealing front-end components.</li>
+        <li>Optimized web applications for maximum speed and scalability.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="education">
+  <h2>Education & Certifications</h2>
+  <div class="education-list">
+    <div class="education-item">
+      <h3>Post Graduation in Mobile Application Development</h3>
+      <p>Cambrian College, Sep 2023 - June 2024</p>
+    </div>
+    <div class="education-item">
+      <h3>Bachelor in Computer Applications</h3>
+      <p>Veer Narmad University, Jun 2018 - Mar 2021</p>
+    </div>
+    <div class="education-item">
+      <h3>Meta Android Developer Professional Certificate</h3>
+      <p>John Hopkins University (Coursera)</p>
+    </div>
+    <div class="education-item">
+      <h3>Google Data Analytics Professional Certificate</h3>
+      <p>Google Career Certificates</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to discuss a project or just want to say hi, feel free to get in touch!</p>
+  <div class="contact-info">
+    <p><i class="fa fa-phone"></i> +1 705-988-4391</p>
+    <p><i class="fa fa-envelope"></i> binalpatel101220@gmail.com</p>
+    <p><i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/binal-patel" target="_blank">LinkedIn</a></p>
+  </div>
+  <form action="mailto:binalpatel101220@gmail.com" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2024 Binal Patel. All Rights Reserved.</p>
+</footer>
+
+<!-- Smooth Scrolling -->
+<script>
+  document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+</body>
+</html>
