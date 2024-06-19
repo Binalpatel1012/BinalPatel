@@ -83,19 +83,19 @@
     .hero a:hover {
       background: #FF6F61;
     }
-    .skills, .projects, .experience, .education, .contact {
+    .about, .skills, .projects, .experience, .education, .contact {
       background: #FFFFFF;
       margin-top: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       padding: 2rem;
     }
-    .skills h2, .projects h2, .experience h2, .education h2, .contact h2 {
+    .about h2, .skills h2, .projects h2, .experience h2, .education h2, .contact h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-    .skills-grid, .projects-grid, .experience-list, .education-list, .contact-info {
+  .skills-grid, .projects-grid, .experience-list, .education-list, .contact-info {
       display: flex;
       flex-wrap: wrap;
       gap: 1.5rem;
@@ -107,10 +107,15 @@
       display: flex;
       align-items: center;
       font-size: 1.1rem;
+      background: #F5F5F5;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     }
     .skill-item i {
       font-size: 2rem;
       margin-right: 1rem;
+      color: #20B2AA;
     }
     .project-item img {
       max-width: 100%;
@@ -202,34 +207,50 @@
 <section id="about" class="about">
   <h2>About Me</h2>
   <p>I am a developer based in Sudbury, ON, with a robust background in designing and implementing responsive web applications. My expertise includes HTML, CSS, JavaScript, C#, .NET, and Android development. I am committed to translating design concepts into high-quality, functional code and enhancing web performance.</p>
+  <p>This portfolio showcases my significant works, including assignments, projects, and other materials from my time in the Mobile Application Development (MAPD) program. It highlights my skills, achievements, and growth throughout the program and beyond.</p>
 </section>
 
 <section id="skills" class="skills">
   <h2>Skills</h2>
   <div class="skills-grid">
-    <div class="skill-item"><i class="devicon-html5-plain"></i> HTML</div>
-    <div class="skill-item"><i class="devicon-css3-plain"></i> CSS</div>
-    <div class="skill-item"><i class="devicon-javascript-plain"></i> JavaScript</div>
-    <div class="skill-item"><i class="devicon-python-plain"></i> Python</div>
-    <div class="skill-item"><i class="devicon-csharp-plain"></i> C#</div>
-    <div class="skill-item"><i class="devicon-dot-net-plain"></i> .NET</div>
-    <div class="skill-item"><i class="devicon-android-plain"></i> Android</div>
-    <div class="skill-item"><i class="devicon-figma-plain"></i> Figma</div>
-    <div class="skill-item"><i class="devicon-r-plain"></i> R Programming</div>
+    <div class="skill-item"><i class="fab fa-html5"></i> HTML</div>
+    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS</div>
+    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+    <div class="skill-item"><i class="fab fa-react"></i> React</div>
+    <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+    <div class="skill-item"><i class="fab fa-android"></i> Android</div>
+    <div class="skill-item"><i class="fab fa-figma"></i> Figma</div>
+    <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
   </div>
 </section>
 
 <section id="projects" class="projects">
   <h2>Projects</h2>
   <div class="projects-grid">
+    <!-- Example Project -->
     <div class="project-item">
-      <img src="path/to/meal-mate-screenshot.jpg" alt="MEALMATE Application">
-      <div class="project-details">
+           <div class="project-details">
         <h3>MEALMATE Application</h3>
         <p>Developed using C# and .NET, MEALMATE enhances meal planning and nutrition tracking. Features include user authentication, meal logging, and personalized recipe recommendations.</p>
       </div>
     </div>
-  </div>
+    <!-- Add more project entries here -->
+    <!-- Semester 1 Projects -->
+    <div class="project-item">
+            <div class="project-details">
+        <h3>Bubble Application Development</h3>
+        <p>Developed an application on a low code no code platform known as bubble and created several applications on that platform in first semester project</p>
+      </div>
+    </div>
+    <!-- Semester 2 Projects -->
+    <div class="project-item">
+    
+      <div class="project-details">
+        <h3>Calculator App on Kotlin</h3>
+        <p>Created a functional calculator app using kotlin</p>
+      </div>
+    </div>
 </section>
 
 <section id="experience" class="experience">
